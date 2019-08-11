@@ -21,16 +21,17 @@ rgba(169,69,119,1) 51%, rgba(232,81,64,1) 100%); }
   position: fixed;
   top: 0;
   left: 0px;
+  background-color:rgba(255,0,255,0.3);
 }
 /*NAVBAR-flex childern*/
-li,a {
+li {
   list-style: none;
-  text-decoration: none;
-  color: white;
   padding: 10px;
  }
 
- li{margin-right: 2px}
+ a {text-decoration: none;
+    color: white}
+
 
  /*.nav > li {flex:1} flex kids take up equal space/better then adding %*/
 
@@ -45,28 +46,53 @@ li,a {
   padding: 20px;
   }
 
-/*GRID VIEW*/
+/*GRID VIEW - DO NOT USE AREA GRID FOR IMGS*/
+
 .wrapper2{
-  height: 90vh;
   margin: 40px 80px 20px 80px;
-  border: 2px solid black
+  border: 2px solid black;
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
-/*.wrapper2 {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-gap: 10px;
-  background-color: #fff;
-  color: #444;*/
+.header {
+  text-align: center;
+  grid-column: 1 / 4;
+  height: 100px;
+}
+
+.header>h1{ padding-top:70px}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-title {
+font-size: 20px;
+}
 
 .box {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/*CONTACT FLEX SECTION*/
 .contact{
   height: 50vh;
   margin: 40px 80px 20px 80px;
