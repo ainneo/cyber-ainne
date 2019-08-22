@@ -17,19 +17,19 @@ rgba(169,69,119,1) 51%, rgba(232,81,64,1) 100%); }
   margin: 40px 80px 20px 80px;
 }
 
-/*NAVBAR-flex parent*/
+/*NAVBAR*/
 .nav {
-  display:flex;
-  justify-content: flex-end;
-  width: 100%;
+  transition: 0.3s all ease;
   position: fixed;
+  text-align: right;
   top: 0;
-  left: 0px;
-  background-color: #231b1b;
-  height: 40px;
+  width: 100%;
+  height: 50px;
+  background: #27292F;
 }
-/*NAVBAR-flex childern*/
+/*NAVBAR*/
 li {
+  display: inline-block;
   list-style: none;
   padding: 10px;
   padding: 40px
@@ -38,7 +38,7 @@ li {
  }
 
  a {text-decoration: none;
-    color: white}
+    color: white;}
 
 
  /*.nav > li {flex:1} flex kids take up equal space/better then adding %*/
@@ -104,7 +104,7 @@ border-radius: 2px;
   align-items: center;
 }
 
-.contact>p{font-size: 20px}
+.contact>h2{font-size: 40px}
 
 .btn {
   display: inline-block;
@@ -173,16 +173,42 @@ border-radius: 2px;
     height: 300px;
   }
   .header>h2{
-    font-size: 25px;
-    padding-bottom: 0;
+    font-size: 20px
    }
-   .contact{height:7vh}
-   .contact>p{display:none}
+.contact>h2{font-size: 20px}
+.contact>p{font-size: 14px; padding: 2px}
 
-   .wrapper2{
-     grid-gap: 20px;
-     padding-bottom:40px;
-   }
+/**** hamburger icon ****/
+.hamburger {
+  position: fixed;
+  top: 5px;
+  left: 20px;
+  z-index: 9999;
+}
+/*absolute taking out of the flow of
+document and positioning it where
+ever we want using top/right..*/
+.span, .span1, .span2 {
+  display: block;
+  background: #222;
+  margin: 6px 0;
+  height: 6px;
+  width: 36px;
+  border-radius: 2px;
+  position: relative;
+  transition: 0.3s;
+}
 
 
-  }
+.color {background: white}/*change hamburger color w/JS*/
+
+.nav {right: -100%;} /*open w/JS*/
+
+.open {right: 0px;} /*open .nav* with JS*/
+
+}
+
+/*could not use flexbox for nav...
+did not work with absolute position of hamburger/span items.
+next time try to design with mobile hamburger first and then
+use flexbox nav as a child(mediaq)*/
