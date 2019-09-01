@@ -10,7 +10,7 @@
 
 body {background:rgb(98,55,177);
 background: linear-gradient(45deg, rgba(98,55,177,1) 0%,
-rgba(169,69,119,1) 51%, rgba(232,81,64,1) 100%); }
+rgba(169,69,119,1) 53%, rgba(232,81,64,1) 100%); }
 /*COLORZILLA Ext. PICKER and https://cssgradient.io/*/
 
 .wrapper {
@@ -139,6 +139,10 @@ border-radius: 2px;
 
 
 @media only screen and (max-width: 700px) {
+  body {background:rgb(98,55,177);
+  background: linear-gradient(45deg, rgba(98,55,177,1) 0%,
+  rgba(169,69,119,1) 78%, rgba(232,81,64,1) 100%); }
+
   .contact{
     text-align:center;
   }
