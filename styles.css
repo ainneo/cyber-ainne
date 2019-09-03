@@ -26,14 +26,13 @@ rgba(169,69,119,1) 53%, rgba(232,81,64,1) 100%); }
   width: 100%;
   height: 50px;
   background: #27292F;
+  z-index: 1;
 }
 /*NAVBAR*/
 li {
   display: inline-block;
   list-style: none;
-  padding: 10px;
-  padding: 40px
-  padding-top: 0px;
+  padding-top: 15px;
   padding-right: 20px;
  }
 
@@ -61,14 +60,22 @@ li {
 .wrapper2{
   display:grid;
   grid-template-columns:repeat(3, 1fr);
-  grid-gap: 60px;
-  background: #fffafd;
+  grid-gap: 30px;
+  background: #F0F0F0;
   padding: 0 70px 70px 70px;
 }
 
-.box {box-shadow: 3px 3px grey;
+/*.box {box-shadow: 3px 3px grey;
       border-radius: 10px;
-      border: .5px solid #e0d9dd;}
+      border: .5px solid #e0d9dd;}*/
+      .box{
+        position: relative;
+        width: 100%;
+      }
+
+      .box:hover > .overlay {
+        opacity: .8;
+      }
 
 .header {
   text-align: center;
@@ -76,45 +83,66 @@ li {
   height: 150px;
 }
 
-.header>h2{padding-top: 70px; color: #231b1b; font-size: 40px}
+.header>h2{padding-top: 70px; color: #231b1b; font-size: 36px}
 
 .project-image {
   width: 100%;
-  height: 200px;
+  height: 175px;
   object-fit: cover;
-  border-radius: 5px;
 }
 
-.project-title {
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+ .project-title {display:none}
+
+/*.project-title {
 font-size: 16px;
 text-align: center;
 padding: 10px;
 color: white;
 background:#231b1b;
 border-radius: 2px;
-}
+}*/
 
 /*CONTACT FLEX SECTION*/
 .contact{
-  height: 20vh;
-  margin: 40px 80px 20px 80px;
+  height: 12vh;
+  margin: 20px 80px 20px 80px;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.contact>h2{font-size: 40px}
+.contact>h2{font-size: 24px}
 
 .btn {
   display: inline-block;
   padding: 20px;
   font-size: 20px;
-  text-shadow: 2px 2px 1px #231b1b;
-  border-radius: 2px;
-}
-.btn:hover {
-  color: purple;
 }
 
 
@@ -124,8 +152,12 @@ border-radius: 2px;
   .wrapper {
     margin: 40px 300px 20px 300px;
   }
+
+  .wrapper2 {
+    padding: 40px 100px 20px 100px;
+  }
   .project-image {
-    height: 400px;
+    height: 350px;
   }
   .nav {
    height: 60px;
@@ -151,8 +183,7 @@ border-radius: 2px;
     font-size: 15px;
   }
   .contact>h2{
-    font-size: 30px;
-    padding: 10px;
+    font-size: 20px;
   }
 
   .wrapper2{
@@ -177,9 +208,9 @@ border-radius: 2px;
     height: 300px;
   }
   .header>h2{
-    font-size: 20px
+    font-size: 26px
    }
-.contact>h2{font-size: 20px}
+.contact>h2{font-size: 16px}
 .contact>p{font-size: 14px; padding: 2px}
 
 /**** hamburger icon ****/
