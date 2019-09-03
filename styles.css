@@ -74,7 +74,7 @@ li {
       }
 
       .box:hover > .overlay {
-        opacity: .8;
+        opacity: .7;
       }
 
 .header {
@@ -100,7 +100,6 @@ li {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
   background-color: black;
 }
 
@@ -114,6 +113,7 @@ li {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  z-index: -1;
 }
 
  .project-title {display:none}
