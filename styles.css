@@ -77,6 +77,10 @@ li {
         opacity: .7;
       }
 
+      .box:active > .overlay {
+        opacity: .7;
+      }
+
 .header {
   text-align: center;
   grid-column: 1 / 4;
