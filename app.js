@@ -21,3 +21,13 @@ function toggleNav(){
 		})
 }
 toggleNav();
+
+
+//JS image overlay - bc there is no hover for touch devices
+
+
+const overlays = document.querySelectorAll(".overlay");  //not element, it is a NODE LIST
+
+overlays.forEach(overlay => {
+  overlay.addEventListener('touchstart',() => overlay.classList.toggle("overlay"))
+})
