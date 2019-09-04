@@ -32,6 +32,4 @@ overlays.forEach(overlay => {
   overlay.addEventListener('touchstart',() => overlay.classList.add("overlay"));
 });
 
-overlays.forEach(overlay => {
-  overlay.addEventListener('touchend',() => overlay.classList.remove("overlay, text"));
-})
+
