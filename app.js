@@ -29,5 +29,9 @@ toggleNav();
 const overlays = document.querySelectorAll(".overlay");  //not element, it is a NODE LIST
 
 overlays.forEach(overlay => {
-  overlay.addEventListener('touchmove',() => overlay.classList.toggle("overlay"))
+  overlay.addEventListener('touchstart',() => overlay.classList.add("overlay"));
+});
+
+overlays.forEach(overlay => {
+  overlay.addEventListener('touchend',() => overlay.classList.remove("overlay, text"));
 })
