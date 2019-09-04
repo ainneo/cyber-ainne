@@ -6,8 +6,6 @@ const spanEl = document.querySelector(".span");
 const spanEl1 = document.querySelector(".span1");
 const spanEl2 = document.querySelector(".span2");
 
-
-
 //classlist is a property and .toggle is a method
 // element.property.method("classname")
 
@@ -22,14 +20,14 @@ function toggleNav(){
 }
 toggleNav();
 
-
 //JS image overlay - bc there is no hover for touch devices
-
-
 const overlays = document.querySelectorAll(".overlay");  //not element, it is a NODE LIST
 
 overlays.forEach(overlay => {
   overlay.addEventListener('touchmove',() => overlay.classList.add("overlay"));
 });
 
-
+//forEach() method calls a function once for each element in an array, in order.
+//querySelectorAll() returns a static (not live) NodeList representing a list
+//arrow function passing an "anything" parameter
+//And remember, when you have a NodeList, it’s not actually an Array - it’s an “Array-like construct”
