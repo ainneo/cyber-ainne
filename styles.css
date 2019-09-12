@@ -35,7 +35,8 @@ li {
   padding-right: 20px;
  }
  a {text-decoration: none;
-    color: white;}
+    color: white;
+    font-size: 18px}
 
 
  /*.nav > li {flex:1} flex kids take up equal space/better then adding %*/
@@ -47,10 +48,9 @@ li {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  padding: 20px;
   }
 
-  .hello>h1{font-size: 40px;}
+  .hello>h1{font-size: 36px;}
 
 /*GRID VIEW - DO NOT USE AREA GRID FOR IMGS*/
 .wrapper2{
@@ -128,9 +128,9 @@ border-radius: 2px;
 }
 
 .btn {
-  margin-top: 16px;
+  margin-top: 14px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
   text-shadow: 2px 2px 1px #231b1b;
   border-radius: 2px;
 }
@@ -177,8 +177,8 @@ border-radius: 2px;
   .header {
     grid-column: 1/1;
   }
-  .header>h2{font-size: 30px}
-  .hello>h1{font-size: 30px;}
+  .header>h2{font-size: 26px}
+  .hello>h1{font-size: 26px;}
   .wrapper {
     margin: 40px 60px 20px 60px;
   }
