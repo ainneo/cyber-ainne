@@ -1,20 +1,20 @@
-
-/*Base CSS*/
+.e {display: none}/*replace with new site*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
+  color: #F0F0F0;
   font-family: 'Roboto', sans-serif;;
 }
 
-body {background:rgb(98,55,177);
+body {
+background:rgb(98,55,177);
 background: linear-gradient(45deg, rgba(98,55,177,1) 0%,
 rgba(169,69,119,1) 53%, rgba(232,81,64,1) 100%); }
 /*COLORZILLA Ext. PICKER and https://cssgradient.io/*/
 
 .wrapper {
-  margin: 40px 80px 20px 80px;
+  margin: 40px 60px 20px 60px;
 }
 
 /*NAVBAR*/
@@ -28,20 +28,17 @@ rgba(169,69,119,1) 53%, rgba(232,81,64,1) 100%); }
   background: #27292F;
   z-index: 1;
 }
-/*NAVBAR*/
 li {
   display: inline-block;
   list-style: none;
   padding-top: 15px;
   padding-right: 20px;
  }
-
  a {text-decoration: none;
     color: white;}
 
 
  /*.nav > li {flex:1} flex kids take up equal space/better then adding %*/
-
 /*HELLO SECTION*/
 .hello {
   width: 100%;
@@ -56,27 +53,22 @@ li {
   .hello>h1{font-size: 40px;}
 
 /*GRID VIEW - DO NOT USE AREA GRID FOR IMGS*/
-
 .wrapper2{
   display:grid;
   grid-template-columns:repeat(3, 1fr);
-  grid-gap: 60px;
-  background: #fffafd;
-  padding: 0 70px 70px 70px;
+  grid-gap: 30px;
+  background: #F0F0F0;
+  padding: 0 60px 60px 60px;
 }
 
-/*.box {box-shadow: 3px 3px grey;
-      border-radius: 10px;
-      border: .5px solid #e0d9dd;}*/
-      .box{
-        position: relative;
-        width: 100%;
-      }
+.box{
+  position: relative;
+  width: 100%;
+}
 
-      .box:hover > .overlay {
-        opacity: .8;
-      }
-
+.box:hover > .overlay {
+  opacity: .8;
+}
 .header {
   text-align: center;
   grid-column: 1 / 4;
@@ -87,7 +79,7 @@ li {
 
 .project-image {
   width: 100%;
-  height: 200px;
+  height: 225px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -104,7 +96,6 @@ li {
   background-color: black;
 }
 
-
 .text {
   color: white;
   font-size: 20px;
@@ -118,7 +109,6 @@ li {
 }
 
  .project-title {display:none}
-
 /*.project-title {
 font-size: 16px;
 text-align: center;
@@ -128,35 +118,37 @@ background:#231b1b;
 border-radius: 2px;
 }*/
 
+
 /*CONTACT FLEX SECTION*/
 .contact{
-  height: 15vh;
-  margin: 20px 80px 20px 80px;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: #27292F;
+  text-align: center;
+  min-height: 12vh;
+
 }
 
-.contact>h2{font-size: 40px}
-
 .btn {
+  margin-top: 16px;
   display: inline-block;
-  padding: 20px;
   font-size: 20px;
   text-shadow: 2px 2px 1px #231b1b;
   border-radius: 2px;
 }
 
+.contact-details {
+  padding: 12px;
+}
 
 /*MEDIA QUERY*/
+@media only screen and (min-width: 1800px){
+  body .project-image{
+    height: 450px;
+  }
+}
 
 @media only screen and (min-width: 1000px) {
   .wrapper {
     margin: 40px 300px 20px 300px;
-  }
-  .project-image {
-    height: 400px;
   }
   .nav {
    height: 60px;
@@ -166,25 +158,18 @@ border-radius: 2px;
     padding-top: 20px;
     padding-right: 80px;
    }
+  .btn{
+   margin-top: 24px;
+  }
+  .project-image{
+  height: 250px;
+  }
 }
-
 
 @media only screen and (max-width: 700px) {
   body {background:rgb(98,55,177);
   background: linear-gradient(45deg, rgba(98,55,177,1) 0%,
   rgba(169,69,119,1) 78%, rgba(232,81,64,1) 100%); }
-
-  .contact{
-    text-align:center;
-  }
-  .btn {
-    padding: 2px;
-    font-size: 15px;
-  }
-  .contact>h2{
-    font-size: 30px;
-    padding: 10px;
-  }
 
   .wrapper2{
     grid-template-columns:1fr;
@@ -197,23 +182,17 @@ border-radius: 2px;
   .wrapper {
     margin: 40px 60px 20px 60px;
   }
-
-  .project-image {
-    height: 500px;
-  }
 }
 
 @media only screen and (max-width: 500px) {
-  .project-image {
-    height: 300px;
-  }
   .header>h2{
     font-size: 26px
-   }
+  }
+  .btn {
+    font-size:14px;
+  }
 .contact>h2{font-size: 20px}
 .contact>p{font-size: 14px; padding: 2px}
-
-/**** hamburger icon ****/
 .hamburger {
   position: fixed;
   top: 5px;
@@ -233,14 +212,11 @@ ever we want using top/right..*/
   position: relative;
   transition: 0.3s;
 }
-
-
 .color {background: white}/*change hamburger color w/JS*/
 
 .nav {right: -100%;} /*open w/JS*/
 
 .open {right: 0px;} /*open .nav* with JS*/
-
 }
 
 /*could not use flexbox for nav...
