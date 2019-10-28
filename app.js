@@ -23,11 +23,11 @@ toggleNav();
 //JS image overlay - bc there is no hover for touch devices
 const overlays = document.querySelectorAll(".overlay");  //not element, it is a NODE LIST
 
-overlays.forEach(overlay => {
-  overlay.addEventListener('touchmove',() => overlay.classList.add("overlay"));
+overlays.forEach(eventOverlay => {
+  evenOverlay.addEventListener('touchmove',() => eventOverlay.classList.add("overlay"));
 });
 
 //forEach() method calls a function once for each element in an array, in order.
 //querySelectorAll() returns a static (not live) NodeList representing a list
-//arrow function passing an "anything" parameter
+//arrow function passing an "anything" parameter, you can call it anything... it just a default property
 //And remember, when you have a NodeList, it’s not actually an Array - it’s an “Array-like construct”
