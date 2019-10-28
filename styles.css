@@ -131,9 +131,11 @@ border-radius: 2px;
   margin-top: 14px;
   display: inline-block;
   font-size: 18px;
-  text-shadow: 2px 2px 1px #231b1b;
+  text-shadow: 2px 2px 1px navy;
   border-radius: 2px;
 }
+
+.btn:hover{color: #b0a3a3}
 
 .contact-details {
   padding: 12px;
