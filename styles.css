@@ -8,9 +8,7 @@
 }
 
 body {
-background:rgb(98,55,177);
-background: linear-gradient(45deg, rgba(98,55,177,1) 0%,
-rgba(169,69,119,1) 53%, rgba(232,81,64,1) 100%); }
+background:linear-gradient(-90deg, #A3278F 0%, #E52F50 100%);}
 /*COLORZILLA Ext. PICKER and https://cssgradient.io/*/
 
 .wrapper {
@@ -36,7 +34,7 @@ li {
  }
  a {text-decoration: none;
     color: white;
-    font-size: 18px}
+    font-size: 20px}
 
 
  /*.nav > li {flex:1} flex kids take up equal space/better then adding %*/
@@ -44,13 +42,16 @@ li {
 .hello {
   width: 100%;
   height: 60vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
   flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
   }
 
-  .hello>h1{font-size: 36px;}
+  .hello>h1{font-size: 48px;}
+
 
 /*GRID VIEW - DO NOT USE AREA GRID FOR IMGS*/
 .wrapper2{
@@ -170,10 +171,6 @@ border-radius: 2px;
 }
 
 @media only screen and (max-width: 700px) {
-  body {background:rgb(98,55,177);
-  background: linear-gradient(45deg, rgba(98,55,177,1) 0%,
-  rgba(169,69,119,1) 78%, rgba(232,81,64,1) 100%); }
-
   .wrapper2{
     grid-template-columns:1fr;
   }
@@ -188,6 +185,7 @@ border-radius: 2px;
 }
 
 @media only screen and (max-width: 500px) {
+
   .header>h2{
     font-size: 26px
   }
