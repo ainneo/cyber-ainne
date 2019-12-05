@@ -47,10 +47,12 @@ li {
   justify-content: center;
   align-items: center;
   text-align: center;
-
+line-height: 40px
   }
 
   .hello>h1{font-size: 48px;}
+
+  .summary {text-decoration: underline;}
 
 
 /*GRID VIEW - DO NOT USE AREA GRID FOR IMGS*/
@@ -143,6 +145,7 @@ border-radius: 2px;
   padding: 12px;
 }
 
+
 /*MEDIA QUERY*/
 @media only screen and (min-width: 1800px){
   body .project-image{
@@ -172,10 +175,10 @@ border-radius: 2px;
 
 @media only screen and (max-width: 700px) {
   .wrapper2{
-    grid-template-columns:1fr;
+    grid-template-columns:repeat(2, 1fr);
   }
   .header {
-    grid-column: 1/1;
+    grid-column: 1/3;
   }
   .header>h2{font-size: 26px}
   .hello>h1{font-size: 26px;}
@@ -185,6 +188,13 @@ border-radius: 2px;
 }
 
 @media only screen and (max-width: 500px) {
+
+  .wrapper2{
+    grid-template-columns:repeat(1, 1fr);
+  }
+  .header {
+    grid-column: 1/1;
+  }
 
   .header>h2{
     font-size: 26px
