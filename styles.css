@@ -100,7 +100,7 @@ li {
 
 .text {
   text-align: center;
-  font-size: 12px;
+  font-size: 12.5px;
   line-height: 20px;
   color: white;
   position: absolute;
@@ -222,11 +222,11 @@ ever we want using top/right..*/
   position: relative;
   transition: 0.3s;
 }
-.color {background: white}/*change hamburger color w/JS*/
+.color {background: white}/*change span divs color w/JS*/
 
-.nav {right: -100%;} /*open w/JS*/
+.nav {right: -100%;} /*closed at min-width 600px*/
 
-.open {right: 0px;} /*open .nav* with JS*/
+.open {right: 0px;} /*open nav with JS*/
 }
 
 /*could not use flexbox for nav...
