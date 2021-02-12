@@ -1,1 +1,1 @@
-This is my very first web portofilo I created with html, css, and javascript. A lot of the projects have been deleted, but I am keeping this as static template for future projects
+This is my very first web portfolio I created with html, css, and javascript. A lot of the linked projects have been deleted. This site is no longer being used as my main portfolio, but I am keeping this as a static template for future projects.
